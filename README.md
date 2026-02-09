@@ -6,4 +6,3 @@ Curso de  Diseño Experimentales en los recursos naturales
 + Clase semana 1
 + Clase semana 2
 + Clase semana 3
-+ Clase semana 4
