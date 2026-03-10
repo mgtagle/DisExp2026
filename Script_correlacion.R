@@ -55,3 +55,33 @@ plot(tau$A, tau$B,
 # de forma individual no es coincidente
 # su coeficiente de correlación es medio (r =0.47)
 # y no presenta significancia estadística (p-value = 0.2722).
+
+set.seed(123)  # Para reproducibilidad
+
+# Número de observaciones
+n <- 20  
+
+# Generar horas de estudio (entre 1 y 10)
+Horas_estudio <- sample(1:10, n, replace = TRUE)
+
+# Asignar probabilidad de aprobar en función de horas de estudio
+# A más horas, más alta la probabilidad
+Resultado <- sapply(Horas_estudio, function(horas) {
+  ifelse(runif(1) < (horas / 10), "Aprobado", "Reprobado")
+})
+
+# Crear data frame
+estudio <- data.frame(
+  Estudiante = 1:n,
+  Horas_estudio,
+  Resultado
+)
+
+
+# Crear variable dicotómica: 1 = Aprobado, 0 = Reprobado
+estudio$Res_bin <- ifelse(estudio$Resultado == "Aprobado", 1, 0)
+head(estudio)
+
+
+cor.test(estudio$Horas_estudio, estudio$Res_bin, method = "pearson")
+ 
