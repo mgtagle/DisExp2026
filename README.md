@@ -7,3 +7,5 @@ Curso de  Diseño Experimentales en los recursos naturales
 + Clase semana 2
 + Clase semana 3
 + Clase semana 4 :paperclip: 09/02/2026
+
++ [Script Anova](Anova_Clima.R)
