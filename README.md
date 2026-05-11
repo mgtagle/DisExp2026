@@ -10,4 +10,5 @@ Curso de  Diseño Experimentales en los recursos naturales
 
 + [Script Anova](Anova_Clima.R)
 + [Este script para pruebas de una muestra](Prueba_t_una_muestra.R)
-  ++ [los datos para el ANOVA](Climatologia.csv)
+  
+  + [los datos para el ANOVA](Climatologia.csv)
