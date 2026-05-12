@@ -9,6 +9,7 @@ Curso de  Diseño Experimentales en los recursos naturales
 + Clase semana 4 :paperclip: 09/02/2026
 
 + [Script Anova](Anova_Clima.R)
++ [Este script funciona para el ANOVA](Anova_Clima.R)
 + [Este script para pruebas de una muestra](Prueba_t_una_muestra.R)
   
   + [los datos para el ANOVA](Climatologia.csv)
